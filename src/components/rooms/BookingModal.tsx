@@ -383,18 +383,17 @@ export const BookingModal: React.FC<BookingModalProps> = ({
                     <button
                       type="button"
                       onClick={() => setPaymentOption('razorpay')}
-                      className={`p-3 rounded-xl border text-left flex items-start gap-2.5 transition-all ${
-                        paymentOption === 'razorpay'
-                          ? 'border-[#C5A880] bg-[#F8F5EE] ring-2 ring-[#C5A880]/20'
-                          : 'border-[#E6DBCA] bg-[#FDFCF9] hover:bg-[#F8F5EE]'
-                      }`}
+                      className={`p-3 rounded-xl border text-left flex items-start gap-2.5 transition-all ${paymentOption === 'razorpay'
+                        ? 'border-[#C5A880] bg-[#F8F5EE] ring-2 ring-[#C5A880]/20'
+                        : 'border-[#E6DBCA] bg-[#FDFCF9] hover:bg-[#F8F5EE]'
+                        }`}
                     >
                       <div className="p-1.5 rounded-lg bg-[#C5A880]/20 text-[#886E4B] shrink-0 mt-0.5">
                         <CreditCard className="w-3.5 h-3.5" />
                       </div>
                       <div>
                         <div className="flex items-center gap-1">
-                          <span className="text-xs font-semibold text-[#121211]">Razorpay Test GW</span>
+                          <span className="text-xs font-semibold text-[#121211]">Pay Now</span>
                           <span className="text-[9px] uppercase px-1 py-0.2 rounded bg-amber-500/20 text-amber-900 font-bold">
                             Instant
                           </span>
@@ -408,11 +407,10 @@ export const BookingModal: React.FC<BookingModalProps> = ({
                     <button
                       type="button"
                       onClick={() => setPaymentOption('pay_at_hotel')}
-                      className={`p-3 rounded-xl border text-left flex items-start gap-2.5 transition-all ${
-                        paymentOption === 'pay_at_hotel'
-                          ? 'border-[#C5A880] bg-[#F8F5EE] ring-2 ring-[#C5A880]/20'
-                          : 'border-[#E6DBCA] bg-[#FDFCF9] hover:bg-[#F8F5EE]'
-                      }`}
+                      className={`p-3 rounded-xl border text-left flex items-start gap-2.5 transition-all ${paymentOption === 'pay_at_hotel'
+                        ? 'border-[#C5A880] bg-[#F8F5EE] ring-2 ring-[#C5A880]/20'
+                        : 'border-[#E6DBCA] bg-[#FDFCF9] hover:bg-[#F8F5EE]'
+                        }`}
                     >
                       <div className="p-1.5 rounded-lg bg-[#E6DBCA]/40 text-[#7A766C] shrink-0 mt-0.5">
                         <Wallet className="w-3.5 h-3.5" />
